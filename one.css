@@ -1,0 +1,116 @@
+body{
+  background-color: #333;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+#quiz{ 
+  
+    display: flex;
+    height: 100%;
+    width: 95%;
+    min-width: 250px;
+    min-height: 600px;
+    flex-direction: column ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+p { 
+    flex-grow: 3;
+    display: block;
+    color:crimson;
+    font-size: 25px;
+    font-weight: 800;
+}
+form {
+    flex-grow: 1;
+    display: block;
+    min-height: 150px;
+    height: 200px;
+    width: 70%;
+    font-size: 30px;
+    color:white;
+    text-align: left;
+    box-shadow: 8px 8px 40px -19px crimson;
+    background-color: rgb(22, 21, 21);
+    border-radius: 3%;
+    padding: 10px 10px 10px 50px;
+}
+button {
+    flex-grow: 2;
+    max-height: 100px;
+    width: 45%;
+    max-width: 300px;
+    display: block;
+    text-align: center;
+    background-color:crimson;
+    border: none;
+    border-radius: 2%;
+    padding: 10px 10px 10px 10px ;
+    border-radius: 3%;
+    color: white;
+}
+button h1 {
+   color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    
+}
+
+button  a {
+    text-decoration: none;
+}
+ button:hover{
+   cursor: pointer;
+    background-color: rgb(196, 68, 94);
+    transform: translateY(-1px);
+    }
+
+
+
+    input[type="radio"]{
+        margin: 0;
+        opacity: 0;
+        width: 0;
+    }
+    label[for="A"], label[for="B"], label[for="C"], label[for="D"]{
+        margin-bottom: 10px;
+        display: inline-block;
+        padding-left: 26px;
+        background: url(/images/checks.png) no-repeat;
+        background-position: 0 -31px;
+        line-height: 24px;
+        cursor: pointer;
+  
+    }
+    input:checked + label[for="A"],input:checked + label[for="B"],input:checked + label[for="C"],
+input:checked + label[for="D"] {
+    background-position: 0 -67px;
+}
+ @media screen and (max-width: 650px){
+    p{
+        font-size: 18px;
+    }
+    form{
+        font-size: 23px;
+        height: 150px; ;
+    }
+ }
+    
+
+
+
+
+
+
+
+
+
+
+
+
