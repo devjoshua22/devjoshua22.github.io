@@ -7,7 +7,6 @@ body{
 
 }
 #quiz{ 
-  
     display: flex;
     height: 100%;
     width: 95%;
@@ -97,7 +96,7 @@ input:checked + label[for="D"] {
         font-size: 18px;
     }
     form{
-        font-size: 11px;
+        font-size: 13px;
         height: 150px; ;
     }
  }
