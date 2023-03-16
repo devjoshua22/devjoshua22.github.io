@@ -82,7 +82,7 @@ button  a {
         margin-bottom: 10px;
         display: inline-block;
         padding-left: 26px;
-        background: url(/quiz/img/checks.png) no-repeat;
+        background: url(img/checks.png) no-repeat;
         background-position: 0 -31px;
         line-height: 24px;
         cursor: pointer;
