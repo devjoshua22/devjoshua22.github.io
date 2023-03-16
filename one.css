@@ -28,7 +28,7 @@ p {
 }
 form {
     flex-grow: 1;
-    display: block;
+    display: flex;
     min-height: 150px;
     height: 200px;
     width: 70%;
