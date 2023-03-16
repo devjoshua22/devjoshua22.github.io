@@ -150,6 +150,78 @@ const quizdata = [
      D: "kA^2/m",
      correct : "B ",
 }, 
+ {
+     question:"The fundamental frequency of vibration of a sonometer wire may be halved by ________.",
+      A: "doubling the length of the wire.",
+      B: "doubling the mass of the wire." ,
+      C: "reducing the tension by hal",
+      D: "reducing the absolute temperature.",
+      correct : "A",
+},
+{
+    question:"A car starts from rest and covers a distance of 40 m in 10 s. Calculate the magnitude of its acceleration",
+     A: "3.20 ms-2",
+     B: "0.25 ms-2" ,
+     C: "0.80 ms-2",
+     D: "4.00 ms-2",
+     correct : " C",
+},
+// {
+//     question:"According to kinetic molecular model in gases,",
+//      A: "the particles are closely packed together; they occupy minimum space are usually arranged in a regular pattern",
+//      B: "the particles vibrate about fixed positions and are held together by the strong intermolecular bonds between them" ,
+//      C: "the molecules are very far apart and occupy all the spaces made available to them",
+//      D: "the particles occur in clusters with molecules slightly further apart",
+//      correct : "C",
+// },
+{
+    question:"Which of the following liquid is a poor conductor of electricity?",
+     A:"Distilled water",
+     B: "Tap water" ,
+     C: "Sea water",
+     D: "Drinking water",
+     correct : "A",
+},
+{
+    question:"The most suitable instrument to view the sun is ___",
+     A: "helioscope",
+     B: "telescope" ,
+     C: "stroboscope",
+     D: "sun meter",
+     correct : "A",
+},
+{
+    question:"Which of the following is a derived unit?",
+     A: "Kilogram",
+     B: "Metre" ,
+     C: "Newton",
+     D: "Second",
+     correct : "C",
+},
+{
+    question:"If a bar magnet is divided into two pieces, which of the following statement is correct?",
+     A: "two new magnets are created",
+     B: "the magnetic field of each separate piece becomes stronger" ,
+     C: "the electric field is created",
+     D: "the bar magnet is demagnetized",
+     correct : "A",
+},
+{
+    question:"A bar magnet is placed near and lying along the axis of a solenoid connected to a galvanometer. The pointer of the galvanometer shows no deflection when?",
+     A: "the magnet is moved towards the stationary solenoid",
+     B: "there is no relative motion" ,
+     C: "the magnet is moved away from the stationary solenoid",
+     D: "the solenoid is moved away from the stationary magnet",
+     correct : "B",
+},
+{
+    question:"Why do tyres have treads?",
+     A: "increase weight of tyres",
+     B: "increase friction" ,
+     C: "increase its longevity",
+     D: "look good",
+     correct : "B",
+},
 // {
 //     question:"",
 //      A: "",
@@ -157,7 +229,127 @@ const quizdata = [
 //      C: "",
 //      D: "",
 //      correct : "",
-// }, 
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
+// {
+//     question:"",
+//      A: "",
+//      B: "" ,
+//      C: "",
+//      D: "",
+//      correct : "",
+// },
 ];
 let scores = 0
 let currentQuestion = document.getElementById("questions")
@@ -167,7 +359,7 @@ const bText = document.getElementById("B-text")
 const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
-let currentQuiz =  Math.floor(Math.random()* quizdata.length)*0 
+let currentQuiz = 0
 const quiz = document.getElementById("quiz")
  
 loadQuestions()
@@ -193,14 +385,14 @@ loadQuestions()
     })
      return answer
  }
-
+ let rand = Math.floor(Math.random()* quizdata.length)
 function next () {
      answer = getSelected()
     if (answer) {
         if (answer === quizdata[currentQuiz].correct ) {
             scores++
         }
-        currentQuiz ++ 
+        currentQuiz++
         if(currentQuiz < quizdata.length){
             loadQuestions()
         } else{
