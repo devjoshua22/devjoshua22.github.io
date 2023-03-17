@@ -359,7 +359,7 @@ const bText = document.getElementById("B-text")
 const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
-let currentQuiz = 20
+let currentQuiz = 0
 const quiz = document.getElementById("quiz")
  
 loadQuestions()
