@@ -166,14 +166,14 @@ const quizdata = [
      D: "4.00 ms-2",
      correct : " C",
 },
-// {
-//     question:"According to kinetic molecular model in gases,",
-//      A: "the particles are closely packed together; they occupy minimum space are usually arranged in a regular pattern",
-//      B: "the particles vibrate about fixed positions and are held together by the strong intermolecular bonds between them" ,
-//      C: "the molecules are very far apart and occupy all the spaces made available to them",
-//      D: "the particles occur in clusters with molecules slightly further apart",
-//      correct : "C",
-// },
+ {
+     question:"According to kinetic molecular model in gases,",
+      A: "the particles are closely packed together; they occupy minimum space are usually arranged in a regular pattern",
+     B: "the particles vibrate about fixed positions and are held together by the strong intermolecular bonds between them" ,
+     C: "the molecules are very far apart and occupy all the spaces made available to them",
+     D: "the particles occur in clusters with molecules slightly further apart",
+      correct : "C",
+ },
 {
     question:"Which of the following liquid is a poor conductor of electricity?",
      A:"Distilled water",
@@ -359,7 +359,7 @@ const bText = document.getElementById("B-text")
 const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
-let currentQuiz = 0
+let currentQuiz = 20
 const quiz = document.getElementById("quiz")
  
 loadQuestions()
