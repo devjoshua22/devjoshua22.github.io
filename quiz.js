@@ -371,6 +371,7 @@ loadQuestions()
     bText.innerText = currentQuizdata.B
     cText.innerText = currentQuizdata.C
     dText.innerText = currentQuizdata.D
+     perc = Math.floor(scores/quizdata.length * 100)
  }
   function deselectAnswer() {
     answerEls.forEach(answerEl => answerEl.checked = false)
@@ -385,6 +386,10 @@ loadQuestions()
     })
      return answer
  }
+ 
+  
+    
+    
  let rand = Math.floor(Math.random()* quizdata.length)
 function next () {
      answer = getSelected()
@@ -397,6 +402,7 @@ function next () {
             loadQuestions()
         } else{
             quiz.innerHTML = `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
+            <p> Your accuracy is :${perc}% </p>
             <button onclick="location.reload()"> Reload </button>`
         }
     }
