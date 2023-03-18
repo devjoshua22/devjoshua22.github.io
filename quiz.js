@@ -351,17 +351,17 @@ const quizdata = [
 //      correct : "",
 // },
 ]; 
-function sender(){
-Email.send({
-    SecureToken : "b63827b0-34a3-4052-b266-99930c89e801",
-    To : 'devjoshua22.github.io/question-one.html',
-    From : "joshuaokorosa@gmail.com",
-    Subject : "the score",
-    Body:"THe user last score was  with an accuracy of %",
-}).then(
-  message => alert(message)
-);
-}
+// function sender(){
+// Email.send({
+//     SecureToken : "b63827b0-34a3-4052-b266-99930c89e801",
+//     To : 'joshuaokorosa77@gmail.com',
+//     From : "devjoshua22.github.io/question-one.html",
+//     Subject : "the score",
+//     Body:"THe user last score was  with an accuracy of %",
+// }).then(
+//   message => alert(message)
+// );
+// }
 let scores = 0
 let currentQuestion = document.getElementById("questions")
 const answerEls = document.querySelectorAll(".answer")
@@ -370,7 +370,7 @@ const bText = document.getElementById("B-text")
 const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
-let currentQuiz = 25
+let currentQuiz = 0
 const quiz = document.getElementById("quiz")
  
 loadQuestions()
@@ -412,7 +412,6 @@ function next () {
         if(currentQuiz < quizdata.length){
             loadQuestions()
         } else{
-            sender();
             quiz.innerHTML = `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
             <p> Your accuracy is :${perc}% </p>
             <button onclick="location.reload()"> Reload </button>`
