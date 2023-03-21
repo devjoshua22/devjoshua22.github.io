@@ -77,6 +77,7 @@ button  a {
         opacity: 0;
         width: 0;
     }
+    
     label[for="A"], label[for="B"], label[for="C"], label[for="D"]{
         margin-bottom: 10px;
         display: inline-block;
