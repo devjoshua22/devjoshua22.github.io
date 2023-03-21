@@ -203,7 +203,7 @@ function next () {
         currentQuiz ++ 
         if(currentQuiz < quizdata.length){
             loadQuestions()
-        } else{
+        } else {
             quiz.innerHTML = `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
             <button onclick="location.reload()"> Reload </button>`
         }
