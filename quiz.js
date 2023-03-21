@@ -222,6 +222,126 @@ const quizdata = [
      D: "look good",
      correct : "B",
 },
+{
+    question:"Consider the wave equation y = 5mm sin [1cm\(^{-1}\)x - 60s\(^{-1}\)t]. The wave number is?",
+     A: "0.1 cm\(^{-1}\)",
+     B: "10cm\(^{-1}\)" ,
+     C: "1.0cm\(^{-1}\)",
+     D: "2cm\(^{-1}\)",
+     correct : "C",
+},
+{
+    question:"Which of the following is not a consequence of hydrogen bubbles covering the copper plate of a primary cell?",
+     A: "formation of hydrogen bubbles on the electrode",
+     B: "increase in the resistance of the cell" ,
+     C: "local action",
+     D: "polarization",
+     correct : "C",
+},
+{
+    question:"A cell whose internal resistance is 0.55ohms delivers a current of 4 A to an external resistor. What is the lost voltage of the cell?",
+     A: "4.00 V",
+     B: "2.20 V" ,
+     C: "0.15 V",
+     D: "8.00 V",
+     correct : "B",
+},
+{
+    question:"An isotope has an initial activity of 120 Bq. 6 days later its activity is 15 Bq. What is half-life?",
+     A: "3 days",
+     B: "2 days" ,
+     C: "1 day",
+     D: "4 days",
+     correct : "B",
+},
+{
+    question:"In order to remove the error of parallax when taking measurements with a metre rule, the eye should be focused___",
+     A: "slantingly towards the right on the markings",
+     B: "slantingly towards the left on the markings" ,
+     C: "vertically downwards on the markings",
+     D: "vertically upwards on the markings",
+     correct : "C",
+},
+{
+    question:"An athlete standing waist-deep in a swimming pool appears to have short legs because of the light__?",
+     A: "diffraction",
+     B: "refraction" ,
+     C: "reflection",
+     D: "interference",
+     correct : "B",
+},
+{
+    question:"A tuning fork that has a frequency of 312Hz emits a wave which has a wavelength of 1.10 m. Find the velocity of sound.",
+     A: "312.0 ms-1",
+     B: "110.0 ms-1" ,
+     C: "343.2 ms-1",
+     D: "686.4 ms-1",
+     correct : "C",
+},
+{
+    question:"When the plate surface area of a capacitor increases, ___?",
+     A: "the voltage can withstand increase",
+     B: "the capacitance decreases" ,
+     C: "the capacitance is unaffected",
+     D: "the capacitance increases",
+     correct : "D",
+},
+{
+    question:"An electromagnetic relay is a device used for?",
+     A: "reading the magnitude of magnetic flux",
+     B: "controlling another circuit carrying larger current" ,
+     C: "turning in sports",
+     D: "storing magnetic field",
+     correct : "B",
+},
+{
+    question:"A current of 0.5 A flows through a resistor when connected to a 40 V battery. How much energy is dispatched in 2 minutes?",
+     A: "2400 J",
+     B: "9600 J" ,
+     C: "1500 J",
+     D: "1200 J",
+     correct : "A",
+},
+{
+    question:"The vapour pressure___?",
+     A: "increases non-linearly with measuring temperature",
+     B: "increases linearly with increasing temperature" ,
+     C: "decreases linearly with increasing temperature",
+     D: "decreases non-linearly ith measuring temperature",
+     correct : "A",
+},
+{
+    question:"Which of these is a second-class lever?",
+     A: "sugar tongs",
+     B: "claw hammer" ,
+     C: "plier",
+     D: "wheelbarrow",
+     correct : "D",
+},
+{
+    question:"Water is not a good thermometric liquid because it___?",
+     A: "expands unevenly between 0 ºC and 4 ºC",
+     B: "maintains fixed density" ,
+     C: "has low freezing point",
+     D: "wets glass",
+     correct : "D",
+},
+{
+    question:"In the formation of sea breeze, the wind blows from?",
+     A: "sky to land",
+     B: "sea to sky" ,
+     C: "land to sea",
+     D: "sea to land",
+     correct : "D",
+},
+{
+    question:"Which component of the fibre-optic connector has a provision of entry for the fibre along with the fixation to connector housing?",
+     A: "couplers",
+     B: "cable" ,
+     C: "ferrule",
+     D: "connector housing",
+     correct : "A",
+},
 // {
 //     question:"",
 //      A: "",
@@ -286,82 +406,7 @@ const quizdata = [
 //      D: "",
 //      correct : "",
 // },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-// {
-//     question:"",
-//      A: "",
-//      B: "" ,
-//      C: "",
-//      D: "",
-//      correct : "",
-// },
-]; 
-// function sender(){
-// Email.send({
-//     SecureToken : "b63827b0-34a3-4052-b266-99930c89e801",
-//     To : 'joshuaokorosa77@gmail.com',
-//     From : "devjoshua22.github.io/question-one.html",
-//     Subject : "the score",
-//     Body:"THe user last score was  with an accuracy of %",
-// }).then(
-//   message => alert(message)
-// );
-// }
+]
 let scores = 0
 let currentQuestion = document.getElementById("questions")
 const answerEls = document.querySelectorAll(".answer")
@@ -370,10 +415,25 @@ const bText = document.getElementById("B-text")
 const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
+const hinter = document.getElementById("point")
 let currentQuiz = 0
 const quiz = document.getElementById("quiz")
- 
+let points = 0
+alert(`You have 20 points at the start of of the quiz that can be used for hints
+            1 hint cost 10points use it to get hints 
+            any question answered correctly gives you 5 points`)
+  
 loadQuestions()
+function hint (){
+    if (points >= 10) {
+       points =  points - 10 
+        alert(`the correct answer is ${quizdata[currentQuiz].correct}`)
+        hinter.innerText = `${points}points`
+        console.log(points)
+    } else{
+        alert("Not enough points please answer questions correctly to gain more points")
+    }
+}
  function loadQuestions (){
     deselectAnswer()
     const currentQuizdata = quizdata[currentQuiz]
@@ -382,6 +442,7 @@ loadQuestions()
     bText.innerText = currentQuizdata.B
     cText.innerText = currentQuizdata.C
     dText.innerText = currentQuizdata.D
+    point.innerText = `${points}points`
      perc = Math.floor(scores/quizdata.length * 100)
  }
   function deselectAnswer() {
@@ -407,13 +468,17 @@ function next () {
     if (answer) {
         if (answer === quizdata[currentQuiz].correct ) {
             scores++
+            points = points + 5
+            console.log(points)
         }
         currentQuiz++
         if(currentQuiz < quizdata.length){
             loadQuestions()
         } else{
-            quiz.innerHTML = `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
+            quiz.innerHTML = 
+            `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
             <p> Your accuracy is :${perc}% </p>
+            <p> Your points gathered is :${points} </p>
             <button onclick="location.reload()"> Reload </button>`
         }
     }

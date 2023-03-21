@@ -9,7 +9,9 @@
     <title>questions</title>
 </head>
 <body>
+  
     <div id="quiz">
+        <button id="point" onclick="hint()">Points</button>
         <p id="questions"> </p>
         <form >
         <input type="radio" name="answer" value="true"  id="A" class="answer"id="A-text"><label for="A"id="A-text">A.   Answer </label><br>
@@ -19,8 +21,7 @@
        </form>
        <br>
     <button type="submit" value="submit" id="submit" onclick="next()" ondblclick="next()" onseeked="next()"> <h1>Next</h1></a></button>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="quiz.js"></script> 
 </div>
+<script src="quiz.js"></script> 
 </body>
 </html>
