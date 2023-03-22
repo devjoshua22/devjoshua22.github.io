@@ -160,6 +160,7 @@ const quizdata = [
 // }, 
 ];
 let scores = 0
+let point= 0
 let currentQuestion = document.getElementById("questions")
 const answerEls = document.querySelectorAll(".answer")
 const aText = document.getElementById("A-text")
@@ -167,10 +168,19 @@ const bText = document.getElementById("B-text")
 const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
-let currentQuiz =  Math.floor(Math.random()* quizdata.length)*0 
+const hintEl = document.getElementById("hint")
+let currentQuiz = 0
 const quiz = document.getElementById("quiz")
- 
 loadQuestions()
+function hint(){
+    if(point >= 5) { 
+        alert("this will cost you 5 points")
+        alert(`The correct answer is ${quizdata[currentQuiz].correct}`)
+       point = point- 5
+     } else{
+        alert("You are low on points! answer more question correctly to gain points")
+     }
+}
  function loadQuestions (){
     deselectAnswer()
     const currentQuizdata = quizdata[currentQuiz]
@@ -179,6 +189,7 @@ loadQuestions()
     bText.innerText = currentQuizdata.B
     cText.innerText = currentQuizdata.C
     dText.innerText = currentQuizdata.D
+    hintEl.innerText = point+'Points' 
  }
   function deselectAnswer() {
     answerEls.forEach(answerEl => answerEl.checked = false)
@@ -193,19 +204,23 @@ loadQuestions()
     })
      return answer
  }
-
-function next () {
+function next() {
      answer = getSelected()
     if (answer) {
         if (answer === quizdata[currentQuiz].correct ) {
             scores++
+           point = point + 3
         }
-        currentQuiz ++ 
+        currentQuiz++ 
         if(currentQuiz < quizdata.length){
             loadQuestions()
+            perc = Math.floor(scores/quizdata.length*100) 
+            console.log(scores)
         } else{
-            quiz.innerHTML = `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
-            <button onclick="location.reload()"> Reload </button>`
+            quiz.innerHTML = 
+            `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
+            <p>Your Accuracy was ${Math.floor(scores/quizdata.length*100)}% !</p>
+            <button onclick="location.reload()"> Try Again? </button>`
         }
     }
 }
