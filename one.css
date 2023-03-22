@@ -11,7 +11,7 @@ body{
     height: 100%;
     width: 95%;
     min-width: 250px;
-    min-height: 600px;
+    min-height: 550px;
     flex-direction: column ;
     flex-wrap: wrap;
     align-items: center;
@@ -114,8 +114,11 @@ input:checked + label[for="D"] {
     #hint{
         margin-left: 78%;
         font-size:8px;
+        font-weight: 900;
         width: 13%;
-        height: 3px;
+       max-height: 50px;
+        border-radius: 4%;
+        padding: 0 ;
         
     }
  }
